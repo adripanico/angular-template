@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.wrapper section {
+    flex: 1;
+}
+
+.title {
+    margin-right: 1.5em;
+}
+
+footer mat-toolbar-row {
+    font-size: 0.7em;
+}
+
+footer .spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #e0e0e0;
+}
+
+footer .copyright {
+    color: lightgray;
+    font-size: .8em;
+}

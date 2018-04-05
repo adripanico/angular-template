@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let column of _config.columns">
+        {{ column.label }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of _data">
+      <td *ngFor="let value of row">
+        {{ value | json }}
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <!-- -->
+  </tfoot>
+</table>

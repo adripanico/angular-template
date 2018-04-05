@@ -1,0 +1,15 @@
+.profile-pic {
+    border-radius: 6px !important;
+    width: 100%;
+}
+
+.about-me ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-me li:before {
+    content: '+';
+    padding-right: 8px;
+}

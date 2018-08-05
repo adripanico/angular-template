@@ -1,0 +1,42 @@
+<!-- <advanced-table [config]="example1.config" [data]="example1.data">
+
+</advanced-table> -->
+
+<div class="mat-elevation-z8">
+    <mat-table #table [dataSource]="example1.data.dataSource">
+        <ng-container *ngFor="let column of example1.columns" [matColumnDef]="column.name">
+            <mat-header-cell *matHeaderCellDef> {{ column.label }} </mat-header-cell>
+
+            <!-- Numeric value -->
+            <ng-container *ngIf="column.type === 'number'">
+                <mat-cell *matCellDef="let element"> {{ element[column.name] }}</mat-cell>
+            </ng-container>
+
+            <!-- Alphanumeric value -->
+            <ng-container *ngIf="column.type === 'string'">
+                <mat-cell *matCellDef="let element"> {{ element[column.name] }}</mat-cell>
+            </ng-container>
+
+            <!-- Currency value -->
+            <ng-container *ngIf="column.type === 'currency'">
+                <mat-cell *matCellDef="let element"> {{ element[column.name] }}</mat-cell>
+            </ng-container>
+
+            <!-- Date value -->
+            <ng-container *ngIf="column.type === 'Date'">
+                <mat-cell *matCellDef="let element"> {{ element[column.name] | date:'fullDate' }}</mat-cell>
+            </ng-container>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="example1.headerRowDef"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: example1.headerRowDef;"></mat-row>
+    </mat-table>
+
+    <mat-paginator #example1Paginator
+                 [pageSize]="example1.paginator.pageSize"
+                 [pageSizeOptions]="example1.paginator.pageSizeOptions"
+                 [showFirstLastButtons]="example1.paginator.showFirstLastButtons"
+                 [length]="example1.data.paginator.length"
+                 (page)="example1.onPageChange($event)">
+  </mat-paginator>
+</div>

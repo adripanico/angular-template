@@ -1,0 +1,5 @@
+{
+    "codemetrics.basics.ComplexityLevelExtreme" : 10,
+    "codemetrics.nodeconfiguration.AnyKeyword": 100,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+}

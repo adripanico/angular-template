@@ -1,0 +1,16 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link routerLink="table" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+    Table
+  </a>
+</nav>
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div [@routerTransition]="o.isActivated && o.activatedRoute.routeConfig.path">
+          <router-outlet #o="outlet"></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DummyService } from '@app/core';
+import { DummyService } from '@app/core/services/dummy.service';
 // import { ExampleService } from './example.service';
 
 @Component({
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   private someMethod(): void {
     if (true) {
       console.log('lalala');
-      for (let i: number = 0; i < 10; i++) {
+      for (let i = 0; i < 10; i++) {
         if (i % 2 === 0) {
           //
         } else {

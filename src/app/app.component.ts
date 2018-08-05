@@ -1,4 +1,4 @@
-import { routerTransition } from '@app/core';
+import { routerTransition } from '@app/core/animations/router.transition';
 import { Component } from '@angular/core';
 
 @Component({

@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { SharedModule } from '@app/shared';
+import { SharedModule } from '@app/shared/shared.module';
 
-// import { ComponentsRoutingModule } from './components-routing.module';
-import { ComponentsComponent } from './components.component';
-import { TableComponent } from './table/table.component';
+import { ComponentsRoutingModule } from '@app/features/components/components-routing.module';
+import { ComponentsComponent } from '@app/features/components/components.component';
+import { TableComponent } from '@app/features/components/table/table.component';
 import { TableService } from '@app/features/components/table/table.service';
 
 @NgModule({
   imports: [
     SharedModule,
 
-    // ComponentsRoutingModule,
+    ComponentsRoutingModule,
   ],
   declarations: [
     ComponentsComponent,

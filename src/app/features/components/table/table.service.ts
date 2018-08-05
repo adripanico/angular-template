@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Names } from './names';
+import { Names } from '@app/features/components/table/names';
 import { DataSource } from '@angular/cdk/table';
 
 export interface IData {

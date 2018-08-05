@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { IItem, TableService, IData } from './table.service';
+import { IItem, TableService, IData } from '@app/features/components/table/table.service';
 import { PageEvent } from '@angular/material/paginator';
 
 export interface ITableData {

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 
-import { DummyService } from './services/dummy.service';
+import { DummyService } from '@app/core/services/dummy.service';
 
 /* 3rd party libraries */
 @NgModule({

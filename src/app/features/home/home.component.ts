@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DummyService } from '@app/core/services/dummy.service';
 // import { ExampleService } from './example.service';
 
@@ -8,7 +8,7 @@ import { DummyService } from '@app/core/services/dummy.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor(private dummyService: DummyService,
+  constructor(private dummyService: DummyService
               // private exampleService: ExampleService
              ) {
     //

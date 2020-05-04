@@ -8,24 +8,24 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
     "@angular/cli": "9.1.4",
     "@angular/animations": "9.1.4",
-    "@angular/cdk": "8.2.3",
+    "@angular/cdk": "9.2.2",
     "@angular/common": "9.1.4",
     "@angular/compiler": "9.1.4",
     "@angular/core": "9.1.4",
     "@angular/forms": "9.1.4",
-    "@angular/material": "8.2.3",
+    "@angular/material": "9.2.2",
     "@angular/platform-browser": "9.1.4",
     "@angular/platform-browser-dynamic": "9.1.4",
     "@angular/router": "9.1.4",
     "core-js": "2.6.4",
     "font-awesome": "4.7.0",
-    "hammerjs": "2.0.8",
     "rxjs": "6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

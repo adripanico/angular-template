@@ -10,7 +10,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   imports: [
@@ -24,7 +23,6 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    AngularFontAwesomeModule,
   ],
   declarations: [
     // Shared components
@@ -40,7 +38,6 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    AngularFontAwesomeModule,
 
     // Shared components
   ]

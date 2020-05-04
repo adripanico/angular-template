@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DummyService } from '@app/core/services/dummy.service';
 // import { ExampleService } from './example.service';
 
@@ -16,18 +16,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     //
-  }
-
-  private someMethod(): void {
-    if (true) {
-      console.log('lalala');
-      for (let i = 0; i < 10; i++) {
-        if (i % 2 === 0) {
-          //
-        } else {
-          //
-        }
-      }
-    }
   }
 }

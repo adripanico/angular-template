@@ -15,11 +15,11 @@ const routes: Routes = [
   },
   {
     path: 'components',
-    loadChildren: 'app/features/components/components.module#ComponentsModule',
+    loadChildren: () => import('app/features/components/components.module').then(m => m.ComponentsModule),
   },
   {
     path: 'dummy',
-    loadChildren: 'app/features/dummy/dummy.module#DummyModule',
+    loadChildren: () => import('app/features/dummy/dummy.module').then(m => m.DummyModule),
   },
   {
     path: '**',

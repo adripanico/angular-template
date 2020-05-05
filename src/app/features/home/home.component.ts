@@ -8,7 +8,7 @@ import { DummyService } from '@app/core/services/dummy.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor(private dummyService: DummyService,
+  constructor(private dummyService: DummyService
               // private exampleService: ExampleService
              ) {
     //
@@ -16,18 +16,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     //
-  }
-
-  private someMethod(): void {
-    if (true) {
-      console.log('lalala');
-      for (let i = 0; i < 10; i++) {
-        if (i % 2 === 0) {
-          //
-        } else {
-          //
-        }
-      }
-    }
   }
 }
